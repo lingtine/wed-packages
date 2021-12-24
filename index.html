@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assetes/css/base.css">
     <link rel="stylesheet" href="./assetes/css/main.css">
     <link rel="stylesheet" href="./assetes/font-icon/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="./assetes/css/grid.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
     </style>
@@ -68,42 +69,55 @@
                     </div>
                     <label for="input__open-menu-category" class="content-heading__nav-menu fas fa-bars"></label>
                 </div>
-                <div class="content-heading__infor">
-                    <h4 class="content-heading__title">SEARCH</h4>
-                    <P class="content-heading__content">Find your next holiday on 
-                        <span class="number-packages">72</span> cool packages !
-                    </P>
-                    <div class="content-heading__input">
-                        <h4 class="content-heading__input-title">KEYWORD</h4>
-                        <input type="text" placeholder="Insert keyword" class="input__infor">
-                        <img class="content-heading__input-icon" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/tour-packages/wp-content/uploads/sites/6/2018/12/ico-02.png" alt="">
-                    </div>
-                    <div class="content-heading__input">
-                        <h4 class="content-heading__input-title">DESTINATION</h4>
-                        <input type="text" placeholder="All Destinations" class="input__infor">
-                        <img class="content-heading__input-icon" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/tour-packages/wp-content/uploads/sites/6/2018/12/ico-01.png" alt="">
-                    </div>
-                    <button class="btn background-color-cool">SEARCH NOW</button>
-
-                </div>
-                <div class="content-heading__img">
-                    <img class= "img_para" src="./assetes/img/para.jpg" alt="">
-
-                    <div class="slogan">
-                        <span class="slogan__describe">LUXURY</span>
-                        <span class="slogan__title">TRAVEL
-                        </span>
-
-                    </div>
-                    <div class="chance-picture">
-                        <!-- when don't select add  btn_chance-picture-off-->
-                        <span class="btn_chance-picture"></span>
-                        <span class="btn_chance-picture"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="option-packages">
                 <div class="grid">
+                    <div class="row no-gutters">
+                        <div class="col l-4">
+                            <div class="content-heading__infor">
+                                <h4 class="content-heading__title">SEARCH</h4>
+                                <P class="content-heading__content">Find your next holiday on 
+                                    <span class="number-packages">72</span> cool packages !
+                                </P>
+                                <div class="content-heading__input">
+                                    <h4 class="content-heading__input-title">KEYWORD</h4>
+                                    <input type="text" placeholder="Insert keyword" class="input__infor">
+                                    <img class="content-heading__input-icon" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/tour-packages/wp-content/uploads/sites/6/2018/12/ico-02.png" alt="">
+                                </div>
+                                <div class="content-heading__input">
+                                    <h4 class="content-heading__input-title">DESTINATION</h4>
+                                    <input type="text" placeholder="All Destinations" class="input__infor">
+                                    <img class="content-heading__input-icon" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/tour-packages/wp-content/uploads/sites/6/2018/12/ico-01.png" alt="">
+                                </div>
+                                <button class="btn background-color-cool">SEARCH NOW</button>
+            
+                            </div>
+                        </div>
+                        <div class="col l-8">
+                            <div class="content-heading__img" >
+                                <img class= "img_para" src="./assetes/img/para.jpg" alt="">
+            
+                                <div class="slogan">
+                                    <span class="slogan__describe">LUXURY</span>
+                                    <span class="slogan__title">TRAVEL
+                                    </span>
+            
+                                </div>
+                                <div class="chance-picture">
+                                    <!-- when don't select add  btn_chance-picture-off-->
+                                    <span class="btn_chance-picture"></span>
+                                    <span class="btn_chance-picture"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!---------------------- option-packages -------------------------  -->
+            <div class="option-packages">
+                <div class="grid wide">
                     <div class="content__header">
                         <h3 class="content__sup-title">THE BEST CHOISE</h3>
                         <h1 class="content__title">OUR 
@@ -112,8 +126,8 @@
                             </span> 
                         </h1>
                     </div>
-                    <div class="grid-row">
-                        <div class="grid-4-colom">
+                    <div class="row">
+                        <div class="col l-4">
                             <div class="option-packages__item">
                                 <img class="option-packages__item-img" src="./assetes/img/package-02-1024x640.jpg" alt="">
                                 <div class="option-packages__icon background-color-warm">
@@ -159,7 +173,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-4-colom">
+                        <div class="col l-4">
                             <div class="option-packages__item">
                                 <div class="option-packages__item-sale">
                                     SALE
@@ -212,7 +226,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-4-colom">
+                        <div class="col l-4">
                             <div class="option-packages__item">
                                 <img class="option-packages__item-img" src="./assetes/img/package-01-1024x640.jpg" alt="">
                                 <div class="option-packages__icon background-color-warm">
@@ -262,67 +276,66 @@
                 </div>
             </div>
             <div class="best-package">
-                <div class="grid">     
-                    <div class="best-package_container">
-                        <div class="content__header">
-                            <h3 class="content__sup-title best-package_content ">THE BEST CHOISE</h3>
+                <div class="grid wide"> 
+                    
+                    <div class="row no-gutters">
+                        <div class="col l-6 l-o-6">
+                            <div class="best-package_container">
+                                <div class="content__header">
+                                    <h3 class="content__sup-title best-package_content ">THE BEST CHOISE</h3>
+                                    
+                                    <h1 class="content__title best-package_content mg-b-30">The Best Of Italy</h1>
+                                    <p class="content__describe-p best-package_content">
+                                        Lorem ipsum dolor sit amet, consectetur adip iscing elit. Proin rhoncus urna dictum neque molestie ultricies. Mauris ac vulputate augue. Ut at bibendum elit. Morbi augue leo,
+                                    </p>
+                                </div>
+        
+                            </div>
                             
-                            <h1 class="content__title best-package_content mg-b-30">The Best Of Italy</h1>
-                            <p class="content__describe-p best-package_content">
-                                Lorem ipsum dolor sit amet, consectetur adip iscing elit. Proin rhoncus urna dictum neque molestie ultricies. Mauris ac vulputate augue. Ut at bibendum elit. Morbi augue leo,
-                            </p>
                         </div>
-
                     </div>
-                    <div class="grid-row mg-t-300">
-                        <div class="grid-10-colum">
-                            <div class="grid-row">
-
-                                <div class="grid-10-2-colum">
-                                    <div class="best-package__item-picture">
-                                        <img src="./assetes/img/package-02-1024x640.jpg" alt="">
-                                        <button class="btn background-color-warm btn-s best-package__item-picture-btn">
-                                            700 $
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="grid-10-2-colum">
-                                    <div class="best-package__item-picture">
-                                        <img src="./assetes/img/package-003-1024x640.jpg" alt="">
-                                        <button class="btn background-color-cool btn-s best-package__item-picture-btn">
-                                            500 $
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="grid-10-2-colum">
-                                    <div class="best-package__item-picture">
-                                        <img src="./assetes/img/package-01-1024x640.jpg" alt="">
-                                        <button class="btn background-color-warm btn-s best-package__item-picture-btn">
-                                            400 $
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="grid-10-2-colum">
-                                    <div class="best-package__item-picture">
-                                        <img src="./assetes/img/package-04-150x150.jpg" alt="">
-                                        <button class="btn background-color-warm btn-s best-package__item-picture-btn">
-                                            1200 $
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="grid-10-2-colum">
-                                    <div class="best-package__item-picture">
-                                        <img src="./assetes/img/package-05-150x150.jpg" alt="">
-                                        <button class="btn background-color-warm btn-s best-package__item-picture-btn">
-                                            1500 $
-                                        </button>
-                                    </div>
-                                </div>
+                    <div class="row mg-t-300">
+                        <div class="col l-2">
+                            <div class="best-package__item-picture">
+                                <img src="./assetes/img/package-02-1024x640.jpg" alt="">
+                                <button class="btn background-color-warm btn-s best-package__item-picture-btn">
+                                    700 $
+                                </button>
                             </div>
                         </div>
-
-                        
-                        <div class="grid-2-colum">
+                        <div class="col l-2">
+                            <div class="best-package__item-picture">
+                                <img src="./assetes/img/package-003-1024x640.jpg" alt="">
+                                <button class="btn background-color-cool btn-s best-package__item-picture-btn">
+                                    500 $
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col l-2">
+                            <div class="best-package__item-picture">
+                                <img src="./assetes/img/package-01-1024x640.jpg" alt="">
+                                <button class="btn background-color-warm btn-s best-package__item-picture-btn">
+                                    400 $
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col l-2">
+                            <div class="best-package__item-picture">
+                                <img src="./assetes/img/package-04-150x150.jpg" alt="">
+                                <button class="btn background-color-warm btn-s best-package__item-picture-btn">
+                                    1200 $
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col l-2">
+                            <div class="best-package__item-picture">
+                                <img src="./assetes/img/package-05-150x150.jpg" alt="">
+                                <button class="btn background-color-warm btn-s best-package__item-picture-btn">
+                                    1500 $
+                                </button>
+                            </div>
+                        </div>                     
+                        <div class="col l-2">
                             <div class="quantity-packages">
                                 <div class="quantity-packages__number-packages">
                                     <span class="quantity-packages__number">
@@ -340,7 +353,7 @@
                 </div>
             </div>
             <div class="blog-papackage">
-                <div class="grid">
+                <div class="grid wide">
                     <div class="content__header">
                         <h3 class="content__sup-title">FROM THE BLOG</h3>
                         <h1 class="content__title">ARTICLES & 
@@ -350,8 +363,8 @@
                         </h1>
                     
                     </div>
-                    <div class="grid-row">
-                        <div class="grid-6-colum">
+                    <div class="row">
+                        <div class="col l-6">
                             <div class="blog-papackage__item">
                                 <img src="./assetes/img/blog-01.jpg" alt="" class="blog-papackage-img">
                                 <div class="blog-papackage__container">
@@ -370,7 +383,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-6-colum">
+                        <div class="col l-6">
                             <div class="blog-papackage__item">
                                 <img src="./assetes/img/blog-02.jpg" alt="" class="blog-papackage-img">
                                 <div class="blog-papackage__container background-color-warm ">
@@ -389,7 +402,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-6-colum">
+                        <div class="col l-6">
                             <div class="blog-papackage__item flex-direction-r-r">
                                 <img src="./assetes/img/blog-03.jpg" alt="" class="blog-papackage-img">
                                 <div class="blog-papackage__container background-color-cool">
@@ -408,7 +421,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-6-colum">
+                        <div class="col l-6">
                             <div class="blog-papackage__item flex-direction-r-r">
                                 <img src="./assetes/img/blog-04.jpg" alt="" class="blog-papackage-img">
                                 <div class="blog-papackage__container">
@@ -431,9 +444,9 @@
                 </div>
             </div>
             <div class="nofi-company">
-                <div class="grid">
-                    <div class="grid-row">
-                        <div class="grid-3-colum">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-3">
                             <div class="nofi-company__container">
                                 <span class="nofi-company__number">
                                     02
@@ -444,7 +457,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-3-colum">
+                        <div class="col l-3">
                             <div class="nofi-company__container">
                                 <span class="nofi-company__number">
                                     78
@@ -455,7 +468,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-3-colum">
+                        <div class="col l-3">
                             <div class="nofi-company__container">
                                 <span class="nofi-company__number">
                                     34
@@ -466,7 +479,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-3-colum">
+                        <div class="col l-3">
                             <div class="nofi-company__container">
                                 <span class="nofi-company__number">
                                     56
@@ -482,9 +495,9 @@
             </div>
         </div>
         <footer class="footer">
-            <div class="grid footer-nofi">
-                <div class="grid-row background-color-white footer-container">
-                    <div class="grid-6-colum">
+            <div class="grid wide footer-nofi">
+                <div class="row background-color-white footer-container">
+                    <div class="col l-6">
                         <div class="footer-container__img">
                             <img src="./assetes/img/logo-color-2.png" alt="" class="img_logo">
                         </div>
@@ -506,9 +519,9 @@
                             </a>
                         </div>
                     </div>
-                    <div class="grid-6-colum">
-                        <div class="grid-row">
-                            <div class="grid-3-2-colum">
+                    <div class="col l-6">
+                        <div class="row">
+                            <div class="col l-2-3">
                                 <div class="footer-container__category">
                                     <h2 class="footer-container__category-title">
                                         OUR AGENCY
@@ -537,7 +550,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="grid-3-2-colum">
+                            <div class="col l-2-3">
                                 <div class="footer-container__category">
                                     <h2 class="footer-container__category-title">
                                         PARTNERS
@@ -566,7 +579,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="grid-3-2-colum">
+                            <div class="col l-2-3">
                                 <div class="footer-container__category">
                                     <h2 class="footer-container__category-title">
                                         LAST MINUTE
@@ -598,11 +611,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid-row background-color-cool footer-last">
-                    <div class="grid-6-colum">
+                <div class="row background-color-cool footer-last">
+                    <div class="col l-6">
                         <p class="">THE BEST WORDPRESS TRAVEL THEME</p>
                     </div>
-                    <div class="grid-6-colum">
+                    <div class="col l-6">
                         <p class="footer-last_origin">COPYRIGHT NICDARK THEMES 2018</p>
                     </div>
                 </div>

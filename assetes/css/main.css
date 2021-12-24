@@ -1,7 +1,13 @@
-
+.main {
+    position: relative;
+    overflow: hidden;
+}
 .header {
     height: 36px;
     background-image: linear-gradient(to right,rgb(132, 205, 202),rgb(59, 179, 180));
+    position: absolute;
+    z-index: 10;
+    width: 100%;
 }
 
 
@@ -11,6 +17,7 @@
     height: 36px;
     letter-spacing: 1px;
     padding: 1px 50px;
+    
 }
 .navbar__setting {
     display: flex;
@@ -45,14 +52,13 @@
 
 .content-heading {
     display: flex;
-    height: 550px;
+    height: 588px   ;  
     position: relative;
 }
 
 .content-heading__infor {
-    width: calc((100% / 3));
     padding: 0px 72px;
-    margin-top: 100px;
+    margin-top: 140px;
 }
 
 .content-heading__title {
@@ -113,8 +119,8 @@
 
 
 .content-heading__img {
-    width: calc((100% / 3)*2);
     position: relative;
+    height: 588px;
 }
 .img_para{
     width: 100%;
@@ -129,6 +135,7 @@
     justify-content: space-between;
     width: 100%;
     z-index: 1;
+    margin-top: 35px;
     
 }
 .content-heading__nav-img {
@@ -391,11 +398,11 @@
 }
 
 .best-package_container {
-    width: 50%;
+    width: 100%;
     height: 516px;
     background-color: white;
     padding: 50px;
-    margin-left: 50%;  
+
     
 }
 
@@ -498,7 +505,7 @@
 
 .nofi-company {
     height: 200px;
-    background-image: url(/assetes/img/para-06.jpg);
+    background-image: url('/assetes/img/para-06.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
     padding: 60px;
@@ -533,7 +540,7 @@
 
 .footer {
     height: 500px;
-    background-image: url(/assetes/img/footer.jpg);
+    background-image: url('/assetes/img/footer.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
