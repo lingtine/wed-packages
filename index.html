@@ -11,14 +11,15 @@
     <link rel="stylesheet" href="./assetes/css/main.css">
     <link rel="stylesheet" href="./assetes/font-icon/fontawesome-free-5.15.4-web/css/all.css">
     <link rel="stylesheet" href="./assetes/css/grid.css">
+    <link rel="stylesheet" href="./assetes/css/responsive.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
     </style>
 </head>
 <body>
     <div class="main">
-        <header class="header">         
-            <nav class="navbar">
+        <header class="header ">         
+            <nav class="navbar hidden-table-mobile">
                 <div class="navbar__setting">
                     <div class="navbar__languages mgr-20">
                         <a href="#" class="navbar__icon-link">
@@ -58,20 +59,19 @@
                     </div>
                 </div>
             </nav>
-
+            <div class="content-heading__nav">
+                <div class="content-heading__nav-img">
+                    <img src="./assetes/img/logo-color-2.png" alt="" class="img_logo">
+                </div>
+                <label for="input__open-menu-category" class="content-heading__nav-menu fas fa-bars"></label>
+            </div>
             
         </header>
         <div class="container">
             <div class="content-heading">
-                <div class="content-heading__nav">
-                    <div class="content-heading__nav-img">
-                        <img src="./assetes/img/logo-color-2.png" alt="" class="img_logo">
-                    </div>
-                    <label for="input__open-menu-category" class="content-heading__nav-menu fas fa-bars"></label>
-                </div>
                 <div class="grid">
                     <div class="row no-gutters">
-                        <div class="col l-4">
+                        <div class="col l-4 m-12 c-12">
                             <div class="content-heading__infor">
                                 <h4 class="content-heading__title">SEARCH</h4>
                                 <P class="content-heading__content">Find your next holiday on 
@@ -87,11 +87,11 @@
                                     <input type="text" placeholder="All Destinations" class="input__infor">
                                     <img class="content-heading__input-icon" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/tour-packages/wp-content/uploads/sites/6/2018/12/ico-01.png" alt="">
                                 </div>
-                                <button class="btn background-color-cool">SEARCH NOW</button>
+                                <button class="btn background-color-cool btn-full">SEARCH NOW</button>
             
                             </div>
                         </div>
-                        <div class="col l-8">
+                        <div class="col l-8 m-12 c-12">
                             <div class="content-heading__img" >
                                 <img class= "img_para" src="./assetes/img/para.jpg" alt="">
             
@@ -110,24 +110,27 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
 
 
             <!---------------------- option-packages -------------------------  -->
             <div class="option-packages">
                 <div class="grid wide">
-                    <div class="content__header">
-                        <h3 class="content__sup-title">THE BEST CHOISE</h3>
-                        <h1 class="content__title">OUR 
-                            <span class="content__keyword">
-                                PACKAGES
-                            </span> 
-                        </h1>
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+
+                            <div class="content__header">
+                                <h3 class="content__sup-title">THE BEST CHOISE</h3>
+                                <h1 class="content__title">OUR 
+                                    <span class="content__keyword">
+                                        PACKAGES
+                                    </span> 
+                                </h1>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col l-4">
+                        <div class="col l-4 m-12 c-12">
                             <div class="option-packages__item">
                                 <img class="option-packages__item-img" src="./assetes/img/package-02-1024x640.jpg" alt="">
                                 <div class="option-packages__icon background-color-warm">
@@ -166,14 +169,14 @@
                                         <p class="content__describe-p mg-b-30">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
                                         </p>
-                                        <button class="btn background-color-warm btn-m">
+                                        <button class="btn background-color-warm btn-m btn-full">
                                             DETAILS
                                         </button>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-4">
+                        <div class="col l-4 m-12 c-12">
                             <div class="option-packages__item">
                                 <div class="option-packages__item-sale">
                                     SALE
@@ -219,14 +222,14 @@
                                         <p class="content__describe-p mg-b-30">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
                                         </p>
-                                        <button class="btn background-color-cool btn-m">
+                                        <button class="btn background-color-cool btn-m btn-full">
                                             DETAILS
                                         </button>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-4">
+                        <div class="col l-4 m-12 c-12 ">
                             <div class="option-packages__item">
                                 <img class="option-packages__item-img" src="./assetes/img/package-01-1024x640.jpg" alt="">
                                 <div class="option-packages__icon background-color-warm">
@@ -265,7 +268,7 @@
                                         <p class="content__describe-p mg-b-30">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
                                         </p>
-                                        <button class="btn background-color-warm btn-m">
+                                        <button class="btn background-color-warm btn-m btn-full">
                                             DETAILS
                                         </button>
                                     </a>
@@ -276,10 +279,9 @@
                 </div>
             </div>
             <div class="best-package">
-                <div class="grid wide"> 
-                    
+                <div class="grid wide">                    
                     <div class="row no-gutters">
-                        <div class="col l-6 l-o-6">
+                        <div class="col l-6 l-o-6 m-12 c-12">
                             <div class="best-package_container">
                                 <div class="content__header">
                                     <h3 class="content__sup-title best-package_content ">THE BEST CHOISE</h3>
@@ -294,59 +296,62 @@
                             
                         </div>
                     </div>
-                    <div class="row mg-t-300">
-                        <div class="col l-2">
-                            <div class="best-package__item-picture">
-                                <img src="./assetes/img/package-02-1024x640.jpg" alt="">
-                                <button class="btn background-color-warm btn-s best-package__item-picture-btn">
-                                    700 $
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col l-2">
-                            <div class="best-package__item-picture">
-                                <img src="./assetes/img/package-003-1024x640.jpg" alt="">
-                                <button class="btn background-color-cool btn-s best-package__item-picture-btn">
-                                    500 $
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col l-2">
-                            <div class="best-package__item-picture">
-                                <img src="./assetes/img/package-01-1024x640.jpg" alt="">
-                                <button class="btn background-color-warm btn-s best-package__item-picture-btn">
-                                    400 $
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col l-2">
-                            <div class="best-package__item-picture">
-                                <img src="./assetes/img/package-04-150x150.jpg" alt="">
-                                <button class="btn background-color-warm btn-s best-package__item-picture-btn">
-                                    1200 $
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col l-2">
-                            <div class="best-package__item-picture">
-                                <img src="./assetes/img/package-05-150x150.jpg" alt="">
-                                <button class="btn background-color-warm btn-s best-package__item-picture-btn">
-                                    1500 $
-                                </button>
-                            </div>
-                        </div>                     
-                        <div class="col l-2">
-                            <div class="quantity-packages">
-                                <div class="quantity-packages__number-packages">
-                                    <span class="quantity-packages__number">
-                                        1200
-                                    </span>
-                                    PACKAGES
+                    <div class="best-package__list">
+
+                        <div class="row">
+                            <div class="col l-2 m-4 c-6">
+                                <div class="best-package__item-picture">
+                                    <img src="./assetes/img/package-02-1024x640.jpg" alt="">
+                                    <button class="btn background-color-warm btn-s best-package__item-picture-btn">
+                                        700 $
+                                    </button>
                                 </div>
-                                <div class="quantity-packages__number-tour">
-                                    30 TOURS
+                            </div>
+                            <div class="col l-2 m-4 c-6">
+                                <div class="best-package__item-picture">
+                                    <img src="./assetes/img/package-003-1024x640.jpg" alt="">
+                                    <button class="btn background-color-cool btn-s best-package__item-picture-btn">
+                                        500 $
+                                    </button>
                                 </div>
-                                <button class="btn background-color-cool quantity-packages__btn">VIEW MORE</button>
+                            </div>
+                            <div class="col l-2 m-4 c-6">
+                                <div class="best-package__item-picture">
+                                    <img src="./assetes/img/package-01-1024x640.jpg" alt="">
+                                    <button class="btn background-color-warm btn-s best-package__item-picture-btn">
+                                        400 $
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-6">
+                                <div class="best-package__item-picture">
+                                    <img src="./assetes/img/package-04-150x150.jpg" alt="">
+                                    <button class="btn background-color-warm btn-s best-package__item-picture-btn">
+                                        1200 $
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-4 c-6 hidden-mobile">
+                                <div class="best-package__item-picture">
+                                    <img src="./assetes/img/package-05-150x150.jpg" alt="">
+                                    <button class="btn background-color-warm btn-s best-package__item-picture-btn">
+                                        1500 $
+                                    </button>
+                                </div>
+                            </div>                     
+                            <div class="col l-2 m-12 c-12">
+                                <div class="quantity-packages">
+                                    <div class="quantity-packages__number-packages">
+                                        <span class="quantity-packages__number">
+                                            1200
+                                        </span>
+                                        PACKAGES
+                                    </div>
+                                    <div class="quantity-packages__number-tour">
+                                        30 TOURS
+                                    </div>
+                                    <button class="btn background-color-cool quantity-packages__btn">VIEW MORE</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -364,7 +369,7 @@
                     
                     </div>
                     <div class="row">
-                        <div class="col l-6">
+                        <div class="col l-6 m-12 c-12">
                             <div class="blog-papackage__item">
                                 <img src="./assetes/img/blog-01.jpg" alt="" class="blog-papackage-img">
                                 <div class="blog-papackage__container">
@@ -377,13 +382,13 @@
                                     <p class="content__describe-p">
                                         Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.
                                     </p>
-                                    <button class="btn btn-warm btn-l">
+                                    <button class="btn btn-warm btn-l btn-full">
                                         READ MORE
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-6">
+                        <div class="col l-6 m-12 c-12">
                             <div class="blog-papackage__item">
                                 <img src="./assetes/img/blog-02.jpg" alt="" class="blog-papackage-img">
                                 <div class="blog-papackage__container background-color-warm ">
@@ -396,13 +401,13 @@
                                     <p class="content__describe-p blog-papackage__color-white">
                                         Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.
                                     </p>
-                                    <button class="btn background-color-white btn-l text-color-warm">
+                                    <button class="btn background-color-white btn-l text-color-warm btn-full">
                                         READ MORE
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-6">
+                        <div class="col l-6 m-12 c-12">
                             <div class="blog-papackage__item flex-direction-r-r">
                                 <img src="./assetes/img/blog-03.jpg" alt="" class="blog-papackage-img">
                                 <div class="blog-papackage__container background-color-cool">
@@ -415,13 +420,13 @@
                                     <p class="content__describe-p blog-papackage__color-white">
                                         Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.
                                     </p>
-                                    <button class="btn background-color-white btn-l text-color-cool">
+                                    <button class="btn background-color-white btn-l text-color-cool btn-full">
                                         READ MORE
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-6">
+                        <div class="col l-6 m-12 c-12">
                             <div class="blog-papackage__item flex-direction-r-r">
                                 <img src="./assetes/img/blog-04.jpg" alt="" class="blog-papackage-img">
                                 <div class="blog-papackage__container">
@@ -434,7 +439,7 @@
                                     <p class="content__describe-p">
                                         Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.
                                     </p>
-                                    <button class="btn btn-cool btn-l">
+                                    <button class="btn btn-cool btn-l btn-full">
                                         READ MORE
                                     </button>
                                 </div>
@@ -446,7 +451,7 @@
             <div class="nofi-company">
                 <div class="grid wide">
                     <div class="row">
-                        <div class="col l-3">
+                        <div class="col l-3 m-12 c-12">
                             <div class="nofi-company__container">
                                 <span class="nofi-company__number">
                                     02
@@ -457,7 +462,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-3">
+                        <div class="col l-3 m-12 c-12">
                             <div class="nofi-company__container">
                                 <span class="nofi-company__number">
                                     78
@@ -468,7 +473,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-3">
+                        <div class="col l-3 m-12 c-12">
                             <div class="nofi-company__container">
                                 <span class="nofi-company__number">
                                     34
@@ -479,7 +484,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-3">
+                        <div class="col l-3 m-12 c-12">
                             <div class="nofi-company__container">
                                 <span class="nofi-company__number">
                                     56
@@ -496,127 +501,132 @@
         </div>
         <footer class="footer">
             <div class="grid wide footer-nofi">
-                <div class="row background-color-white footer-container">
-                    <div class="col l-6">
-                        <div class="footer-container__img">
-                            <img src="./assetes/img/logo-color-2.png" alt="" class="img_logo">
-                        </div>
-                        <p class="content__describe-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut diam et nibh <span class="text_important">condimentum</span> venenatis eu ac magnasin. Quisque interdum est mauris, eget ullamcorper.
-                        </p>
-                        <div class="society-icons">
-                            <a href="#" class="society-icon__item">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="society-icon__item">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <a href="#" class="society-icon__item">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                            <a href="#" class="society-icon__item">
-                                <i class="fab fa-vimeo-v"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col l-6">
-                        <div class="row">
-                            <div class="col l-2-3">
-                                <div class="footer-container__category">
-                                    <h2 class="footer-container__category-title">
-                                        OUR AGENCY
-                                    </h2>
-                                    <ul class="footer-container__category-list">
-                                        <li class="footer-container__category-item">
-                                            <i class="fas fa-angle-right"></i>
-                                            <span>Services</span>
-                                        </li>
-                                        <li class="footer-container__category-item">
-                                            <i class="fas fa-angle-right"></i>
-                                            <span>Insurancee</span>
-                                        </li>
-                                        <li class="footer-container__category-item">
-                                            <i class="fas fa-angle-right"></i>
-                                            <span>Agency</span>
-                                        </li>
-                                        <li class="footer-container__category-item">
-                                            <i class="fas fa-angle-right"></i>
-                                            <span>Tourism</span>
-                                        </li>
-                                        <li class="footer-container__category-item">
-                                            <i class="fas fa-angle-right"></i>
-                                            <span>Payment</span>
-                                        </li>
-                                    </ul>
-                                </div>
+                <div class="footer-nofi">
+
+                    <div class="row background-color-white footer-container">
+                        <div class="col l-6 m-12 c-12">
+                            <div class="footer-container__img">
+                                <img src="./assetes/img/logo-color-2.png" alt="" class="img_logo">
                             </div>
-                            <div class="col l-2-3">
-                                <div class="footer-container__category">
-                                    <h2 class="footer-container__category-title">
-                                        PARTNERS
-                                    </h2>
-                                    <ul class="footer-container__category-list">
-                                        <li class="footer-container__category-item">
-                                            <i class="fas fa-angle-right"></i>
-                                            <span>Booking</span>
-                                        </li>
-                                        <li class="footer-container__category-item">
-                                            <i class="fas fa-angle-right"></i>
-                                            <span>RentalCar</span>
-                                        </li>
-                                        <li class="footer-container__category-item">
-                                            <i class="fas fa-angle-right"></i>
-                                            <span>HostelWorld</span>
-                                        </li>
-                                        <li class="footer-container__category-item">
-                                            <i class="fas fa-angle-right"></i>
-                                            <span>Trivago</span>
-                                        </li>
-                                        <li class="footer-container__category-item">
-                                            <i class="fas fa-angle-right"></i>
-                                            <span>TripAdvisor</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col l-2-3">
-                                <div class="footer-container__category">
-                                    <h2 class="footer-container__category-title">
-                                        LAST MINUTE
-                                    </h2>
-                                    <ul class="footer-container__category-list">
-                                        <li class="footer-container__category-item">
-                                            <i class="fas fa-angle-right"></i>
-                                            <span>London</span>
-                                        </li>
-                                        <li class="footer-container__category-item">
-                                            <i class="fas fa-angle-right"></i>
-                                            <span>California</span>
-                                        </li>
-                                        <li class="footer-container__category-item">
-                                            <i class="fas fa-angle-right"></i>
-                                            <span>Indonesia</span>
-                                        </li>
-                                        <li class="footer-container__category-item">
-                                            <i class="fas fa-angle-right"></i>
-                                            <span> Europe</span>
-                                        </li>
-                                        <li class="footer-container__category-item">
-                                            <i class="fas fa-angle-right"></i>
-                                            <span>Oceania</span>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <p class="content__describe-p">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut diam et nibh <span class="text_important">condimentum</span> venenatis eu ac magnasin. Quisque interdum est mauris, eget ullamcorper.
+                            </p>
+                            <div class="society-icons">
+                                <a href="#" class="society-icon__item">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="society-icon__item">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#" class="society-icon__item">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                                <a href="#" class="society-icon__item">
+                                    <i class="fab fa-vimeo-v"></i>
+                                </a>
                             </div>
                         </div>
+                        <div class="col l-6 m-12 c-12">
+                            <div class="row">
+                                <div class="col l-2-3 m-6 c-12">
+                                    <div class="footer-container__category">
+                                        <h2 class="footer-container__category-title">
+                                            OUR AGENCY
+                                        </h2>
+                                        <ul class="footer-container__category-list">
+                                            <li class="footer-container__category-item">
+                                                <i class="fas fa-angle-right"></i>
+                                                <span>Services</span>
+                                            </li>
+                                            <li class="footer-container__category-item">
+                                                <i class="fas fa-angle-right"></i>
+                                                <span>Insurancee</span>
+                                            </li>
+                                            <li class="footer-container__category-item">
+                                                <i class="fas fa-angle-right"></i>
+                                                <span>Agency</span>
+                                            </li>
+                                            <li class="footer-container__category-item">
+                                                <i class="fas fa-angle-right"></i>
+                                                <span>Tourism</span>
+                                            </li>
+                                            <li class="footer-container__category-item">
+                                                <i class="fas fa-angle-right"></i>
+                                                <span>Payment</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col l-2-3 m-6 c-12">
+                                    <div class="footer-container__category">
+                                        <h2 class="footer-container__category-title">
+                                            PARTNERS
+                                        </h2>
+                                        <ul class="footer-container__category-list">
+                                            <li class="footer-container__category-item">
+                                                <i class="fas fa-angle-right"></i>
+                                                <span>Booking</span>
+                                            </li>
+                                            <li class="footer-container__category-item">
+                                                <i class="fas fa-angle-right"></i>
+                                                <span>RentalCar</span>
+                                            </li>
+                                            <li class="footer-container__category-item">
+                                                <i class="fas fa-angle-right"></i>
+                                                <span>HostelWorld</span>
+                                            </li>
+                                            <li class="footer-container__category-item">
+                                                <i class="fas fa-angle-right"></i>
+                                                <span>Trivago</span>
+                                            </li>
+                                            <li class="footer-container__category-item">
+                                                <i class="fas fa-angle-right"></i>
+                                                <span>TripAdvisor</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col l-2-3 m-6 c-12">
+                                    <div class="footer-container__category">
+                                        <h2 class="footer-container__category-title">
+                                            LAST MINUTE
+                                        </h2>
+                                        <ul class="footer-container__category-list">
+                                            <li class="footer-container__category-item">
+                                                <i class="fas fa-angle-right"></i>
+                                                <span>London</span>
+                                            </li>
+                                            <li class="footer-container__category-item">
+                                                <i class="fas fa-angle-right"></i>
+                                                <span>California</span>
+                                            </li>
+                                            <li class="footer-container__category-item">
+                                                <i class="fas fa-angle-right"></i>
+                                                <span>Indonesia</span>
+                                            </li>
+                                            <li class="footer-container__category-item">
+                                                <i class="fas fa-angle-right"></i>
+                                                <span> Europe</span>
+                                            </li>
+                                            <li class="footer-container__category-item">
+                                                <i class="fas fa-angle-right"></i>
+                                                <span>Oceania</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row background-color-cool footer-last">
-                    <div class="col l-6">
-                        <p class="">THE BEST WORDPRESS TRAVEL THEME</p>
-                    </div>
-                    <div class="col l-6">
-                        <p class="footer-last_origin">COPYRIGHT NICDARK THEMES 2018</p>
+                    <div class="footer-last">
+                        <div class="row background-color-cool ">
+                            <div class="col l-6 m-12 c-12">
+                                <p class="footer-last_origin">THE BEST WORDPRESS TRAVEL THEME</p>
+                            </div>
+                            <div class="col l-6 m-12 c-12">
+                                <p class="footer-last_origin footer-last_author">COPYRIGHT NICDARK THEMES 2018</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
